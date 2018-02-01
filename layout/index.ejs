@@ -1,0 +1,12 @@
+<section class="posts">
+    <% page.posts.each(function(item){ %>
+        <%- partial('_partial/article-index', {item})%>
+    <% }); %>
+</section>
+<% if(page.total > 1) { %> 
+    <footer>
+            <div class="pagination">
+                <%- paginator({prev_text: 'Prev', next_text: 'Next'})%>
+            </div>
+    </footer>
+<% } %>
