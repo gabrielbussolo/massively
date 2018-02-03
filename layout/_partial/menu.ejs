@@ -1,8 +1,8 @@
 <nav id="nav">
     <ul class="links">
-        <li class="active"><a href="index.html">This is Massively</a></li>
-        <li><a href="generic.html">Generic Page</a></li>
-        <li><a href="elements.html">Elements Reference</a></li>
+        <% for (var i in theme.menu){ %>
+            <li> <a href="<%- url_for(theme.menu[i]) %>"><%= __(i.toLowerCase()) %></a> </li>
+        <% } %>
     </ul>
     <% if(theme.social) {%>
         <%- partial('_partial/social')%>

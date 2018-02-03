@@ -2411,7 +2411,9 @@
 		}
 
 /* Image */
-
+	img{
+		width: 100%
+	}
 	.image {
 		border: 0;
 		display: inline-block;
@@ -4200,6 +4202,10 @@
 		max-width: 72rem;
 		z-index: 2;
 	}
+
+		#copyright img.imgcopy{
+			width: 1rem
+		}
 
 		#copyright input, #copyright select, #copyright textarea {
 			color: #ffffff;
