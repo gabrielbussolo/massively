@@ -1,8 +1,11 @@
 # Menus
 menu:
   Home: /
-  Categories:
   About: /about/index.html
+
+# Disqus
+disqus_shortname: gabrielferreira
+
 # Social Accounts
 social: true
 twitter_url: https://twitter.com/gabrielfpro
